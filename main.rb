@@ -1,4 +1,3 @@
-require 'pry-byebug'
 module Roles
   ROLES = ['codebreaker', 'codewriter'].freeze
   VALID_INPUT = [1, 2, 3, 4, 5, 6].freeze
@@ -51,7 +50,6 @@ class ComputerPlayer
   end
 
   def create_guess
-    binding.pry
     if @possible_solutions.length == 1
       @possible_solutions[0]
     end
